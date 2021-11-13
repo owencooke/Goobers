@@ -10,6 +10,7 @@ period = str(input('What time interval do you want the prediction to be based on
 
 stock_info = yf.Ticker(stock)   #retrieves stock info
 historical = stock_info.history(period=period)  #historical data for a given period
-print(max(historical.Close))
+print("Maximum Closing Price: {0}".format(max(historical.Close)))
+print("Minimum Closing Price: {0}".format(min(historical.Close)))
 print(historical)
 
