@@ -11,6 +11,7 @@ Contributors: Zamam Moeez, Jared Drueco, Aron Gu, Owen Cooke, Alina Iunusova
 import pandas
 
 price_data = pandas.read_excel('oil_prices.xlsx', sheet_name = 'Sheet1')
+price_data = price_data[price_data.Volume != '-']
 
 data = pandas.DataFrame(price_data, columns=['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume'])
 print(data)
