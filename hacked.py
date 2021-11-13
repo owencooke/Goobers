@@ -12,3 +12,5 @@ import pandas
 
 price_data = pandas.read_excel('oil_prices.xlsx', sheet_name = 'Sheet1')
 
+data = pandas.DataFrame(price_data, columns=['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume'])
+print(data)
