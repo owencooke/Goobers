@@ -2,6 +2,8 @@
 import pandas
 from time import sleep
 import yfinance as yf
+import numpy as np
+
 
 sleep(1)
 
@@ -20,4 +22,23 @@ historical_dataframe = pandas.DataFrame(historical, columns=['Date', 'Open', 'Hi
 price_august282000 = historical_dataframe.Close[historical_dataframe.Date  == "2000-08-28"]
 
 print(price_august282000)
+
+hig = historical_dataframe[historical_dataframe.columns[2]]
+
+print(hig)
+
+higlist = hig.to_numpy()
+
+print(higlist)
+
+lowl = historical_dataframe[historical_dataframe.columns[3]]
+
+print(lowl)
+
+lollist = lowl.to_numpy()
+
+print(lollist)
+
+
+
 
