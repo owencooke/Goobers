@@ -16,3 +16,12 @@ price_data.to_csv(index=False)
 
 data = pandas.DataFrame(price_data, columns=['Date', 'Open', 'High', 'Low', 'Close*', 'Adj Close**', 'Volume'])
 print(data)
+
+hig = data[data.columns[2]]
+
+print(hig)
+
+higlist = col_one_arr = hig.to_numpy()
+
+print(higlist)
+    
