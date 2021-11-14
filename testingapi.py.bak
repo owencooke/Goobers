@@ -42,13 +42,9 @@ lollist = lowl.to_numpy()
 
 print(lollist)
 
-plt.xlabel("Days")
-plt.ylabel("Stock Price")
 plt.plot(lollist)
 plt.plot(higlist)
 plt.show()
-
-
 
 
 
