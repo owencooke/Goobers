@@ -54,8 +54,6 @@ inter2 = [] # list of tuples to contain days b/w which an intersection occurs su
 #print(exp_mvas)
 #print(simple_mvas)
 
-#############################################################################################################
-
 g = [len(exp_mvas),len(simple_mvas)]
 
 lowg = g.sort()
@@ -78,6 +76,13 @@ plt.ylabel('Price ($)')
 plt.xlabel('Days')
 plt.legend()
 plt.title(stock + ' Stock - Period: ' + period + ' (source: YahooFinance)')
+
+#############################################################################################################
+
+
+
+
+
 
 plt.show()
 
