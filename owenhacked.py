@@ -101,6 +101,16 @@ print(intra1)
 print("exp intersentions, larger interval increasing")
 print(intra2)
 
+if simple_mvas1[-1]<simple_mvas2[-1]:
+    print("You should buy the stock based on the simple model")
+if simple_mvas1[-1]>simple_mvas2[-1]:
+    print("You should sell the stock based on the simple model")
+
+if exp_mvas1[-1]<exp_mvas2[-1]:
+    print("You should buy the stock based on the exponential model")
+if exp_mvas1[-1]>exp_mvas2[-1]:
+    print("You should sell the stock based on the exponential model")
+
 
 
 
