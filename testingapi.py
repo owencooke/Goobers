@@ -4,6 +4,7 @@ from time import sleep
 from pandas.io.parsers import read_csv
 import yfinance as yf
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 sleep(1)
@@ -40,6 +41,11 @@ print(lowl)
 lollist = lowl.to_numpy()
 
 print(lollist)
+
+plt.plot(lollist)
+plt.plot(higlist)
+plt.show()
+
 
 
 

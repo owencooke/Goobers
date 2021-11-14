@@ -4,6 +4,7 @@ from time import sleep
 from pandas.io.parsers import read_csv
 import yfinance as yf
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 sleep(1)
@@ -25,7 +26,7 @@ print(str(type(historical)))
 
 #print(price_august282000)
 
-hig = historical[historical.columns[2]]
+hig = historical[historical.columns[1]]
 
 print(hig)
 
@@ -33,13 +34,17 @@ higlist = hig.to_numpy()
 
 print(higlist)
 
-lowl = historical[historical.columns[3]]
+lowl = historical[historical.columns[2]]
 
 print(lowl)
 
 lollist = lowl.to_numpy()
 
 print(lollist)
+
+plt.plot(lollist)
+plt.plot(higlist)
+
 
 
 
