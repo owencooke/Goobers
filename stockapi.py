@@ -93,26 +93,26 @@ for i in range(k[0]-1):
          intra2.append((i,i+1))
 
 # Output intervals of increase/decrease along with intersections of the exponential and simple moving averages
-print("simple intersections, lower interval increasing")
+print("Simple Moving Average, Lower interval increasing:")
 print(inter1)
-print("simple intersentions, larger interval increasing")
+print("Simple Moving Average, Larger interval increasing:")
 print(inter2)
-print("exp intersections, lower interval increasing")
+print("Exponential Moving Average, Lower interval increasing:")
 print(intra1)
-print("exp intersentions, larger interval increasing")
+print("Exponential Moving Average, Larger interval increasing:")
 print(intra2)
 
 # Determines whether stock should be bought/sold based on the simple model
 if simple_mvas1[-1]<simple_mvas2[-1]:
-    print("You should buy the stock based on the simple model.")
+    print("You should buy the stock long term based on the simple model.")
 if simple_mvas1[-1]>simple_mvas2[-1]:
-    print("You should sell the stock based on the simple model.")
+    print("You should sell the stock long term based on the simple model.")
 
 # Determines whether stock should be bought/sold based on the simple model
 if exp_mvas1[-1]<exp_mvas2[-1]:
-    print("You should buy the stock based on the exponential model.")
+    print("You should buy the stock short term based on the exponential model.")
 if exp_mvas1[-1]>exp_mvas2[-1]:
-    print("You should sell the stock based on the exponential model.")
+    print("You should sell the stock based short term based on the exponential model.")
 
 days = list(range(0, len(closelist)))
 plt.plot(days, closelist,'k-', label='Closing Prices')
