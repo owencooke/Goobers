@@ -26,19 +26,15 @@ print(str(type(historical)))
 #print(price_august282000)
 
 hig = historical[historical.columns[1]]
-
 print(hig)
 
 higlist = hig.to_numpy()
-
 print(higlist)
 
 lowl = historical[historical.columns[2]]
-
 print(lowl)
 
 lollist = lowl.to_numpy()
-
 print(lollist)
 
 
